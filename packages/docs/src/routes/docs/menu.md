@@ -11,3 +11,4 @@
 - [Radio](/docs/components/radio)
 - [Input](/docs/components/input)
 - [Menu](/docs/components/menu)
+- [Switch](/docs/components/switch)

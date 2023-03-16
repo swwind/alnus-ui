@@ -1,0 +1,35 @@
+---
+title: Switch
+---
+
+import Preview from "~/components/preview/preview";
+
+# Switch
+
+```jsx
+<label class="flex items-center gap-4">
+  <input type="checkbox" class="switch" />
+  <span>Some Text</span>
+</label>
+```
+
+<Preview>
+  <div class="flex flex-col gap-1.5">
+    <label class="flex items-center gap-4">
+      <input type="checkbox" class="switch" />
+      <span>Unchecked</span>
+    </label>
+    <label class="flex items-center gap-4">
+      <input type="checkbox" class="switch" checked />
+      <span>Checked</span>
+    </label>
+    <label class="flex items-center gap-4">
+      <input type="checkbox" class="switch" disabled />
+      <span>Disabled</span>
+    </label>
+    <label class="flex items-center gap-4">
+      <input type="checkbox" class="switch" disabled checked />
+      <span>Disabled Checked</span>
+    </label>
+  </div>
+</Preview>
