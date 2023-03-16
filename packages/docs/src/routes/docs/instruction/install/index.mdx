@@ -4,18 +4,27 @@ title: Installation
 
 # Installation
 
-Firstly, install `tailwindcss` yourself.
+## Install from NPM
 
-After that, install `litheui` package.
+Suppose you already have [TailwindCSS](https://tailwindcss.com/docs/installation) installed, you just need to install `litheui` package.
 
 ```bash
 yarn add -D litheui
 ```
 
-Finally, add following code to `tailwind.config.js`:
+After that, add following code to your `tailwind.config.js`:
 
 ```js
 module.exports = {
   plugins: [require("litheui")],
 };
+```
+
+## Install from CDN
+
+Add following lines in your HTML.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/litheui/dist/base.css" />
+<link rel="stylesheet" href="https://unpkg.com/litheui/dist/components.css" />
 ```

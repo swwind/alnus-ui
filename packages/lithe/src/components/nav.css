@@ -12,4 +12,8 @@
   &.active {
     @apply bg-slate-100 dark:bg-slate-800;
   }
+
+  &.disabled {
+    @apply pointer-events-none opacity-50;
+  }
 }

@@ -1,0 +1,73 @@
+---
+title: Modal
+---
+
+import Preview from "~/components/preview/preview";
+
+# Modal
+
+```jsx
+<label class="btn" for="modal" tabIndex={0}>Click</label>
+<input id="modal" hidden type="checkbox" />
+<div class="modal">
+  <label class="modal-background" for="modal" tabIndex={0} />
+  <div class="modal-content">
+    <h2 class="text-2xl font-bold">Modal Title</h2>
+    <p class="py-2">Are you sure?</p>
+  </div>
+</div>
+```
+
+<Preview>
+  <label class="btn" for="modal-1" tabIndex={0}>
+    {"Click"}
+  </label>
+  <input id="modal-1" hidden type="checkbox" />
+  <div class="modal">
+    <label class="modal-background" for="modal-1" tabIndex={0} />
+    <div class="modal-content">
+      <h2 class="text-2xl font-bold">Modal Title</h2>
+      <p class="py-2">Are you sure?</p>
+    </div>
+  </div>
+</Preview>
+
+**Note**: `.modal` can be activated by `&.checked`, `&.active` or `:checked + &`.
+
+## Manually Close
+
+```jsx
+<label class="btn" for="modal" tabIndex={0}>Click</label>
+<input id="modal" hidden type="checkbox" />
+<div class="modal">
+  <div class="modal-background" for="modal" />
+  <div class="modal-content">
+    <h2 class="text-2xl font-bold">Modal Title</h2>
+    <p class="py-2">Are you sure?</p>
+    <p class="flex justify-end">
+      <label for="modal" class="btn" tabIndex={0}>
+        Yes
+      </label>
+    </p>
+  </div>
+</div>
+```
+
+<Preview>
+  <label class="btn" for="modal-2" tabIndex={0}>
+    {"Click"}
+  </label>
+  <input id="modal-2" hidden type="checkbox" />
+  <div class="modal">
+    <div class="modal-background" />
+    <div class="modal-content">
+      <h2 class="text-2xl font-bold">Modal Title</h2>
+      <p class="py-2">Are you sure?</p>
+      <p class="flex justify-end">
+        <label for="modal-2" class="btn" tabIndex={0}>
+          {"Yes"}
+        </label>
+      </p>
+    </div>
+  </div>
+</Preview>

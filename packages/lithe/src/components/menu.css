@@ -41,6 +41,7 @@
 }
 
 .checked,
+.active,
 :checked + {
   &:is(.menu-checkbox, .menu-radio) {
     @apply before:bg-cover before:bg-center;

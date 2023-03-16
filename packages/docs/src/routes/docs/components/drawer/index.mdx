@@ -1,0 +1,89 @@
+---
+title: Drawer
+---
+
+import Preview from "~/components/preview/preview";
+
+# Drawer
+
+```jsx
+<label class="btn" for="drawer" tabIndex={0}>Click</label>
+<input id="drawer" hidden type="checkbox" />
+<div class="drawer">
+  <label class="drawer-background" for="drawer" tabIndex={0} />
+  <div class="drawer-content">
+    <h2 class="text-2xl font-bold">Modal Title</h2>
+    <p class="my-4">Are you sure?</p>
+  </div>
+</div>
+```
+
+<Preview>
+  <label class="btn" for="drawer-1" tabIndex={0}>
+    {"Click"}
+  </label>
+  <input id="drawer-1" hidden type="checkbox" />
+  <div class="drawer">
+    <label class="drawer-background" for="drawer-1" tabIndex={0} />
+    <div class="drawer-content">
+      <h2 class="text-2xl font-bold">Modal Title</h2>
+      <p class="my-4">Are you sure?</p>
+    </div>
+  </div>
+</Preview>
+
+**Note**: `.drawer` can be activated by `&.checked`, `&.active` or `:checked + &`.
+
+## Manually Close
+
+Just move `label.drawer-background` to `div.drawer-background`.
+
+```jsx
+<label class="btn" for="drawer" tabIndex={0}>Click</label>
+<input id="drawer" hidden type="checkbox" />
+<div class="drawer">
+  <div class="drawer-background" for="drawer" />
+  <div class="drawer-content">
+    <h2 class="text-2xl font-bold">Modal Title</h2>
+    <p class="my-4">Are you sure?</p>
+    <label for="drawer" class="btn" tabIndex={0}>Yes</label>
+  </div>
+</div>
+```
+
+<Preview>
+  <label class="btn" for="drawer-2" tabIndex={0}>
+    {"Click"}
+  </label>
+  <input id="drawer-2" hidden type="checkbox" />
+  <div class="drawer">
+    <div class="drawer-background" />
+    <div class="drawer-content">
+      <h2 class="text-2xl font-bold">Modal Title</h2>
+      <p class="my-4">Are you sure?</p>
+      <label for="drawer-2" class="btn" tabIndex={0}>
+        {"Yes"}
+      </label>
+    </div>
+  </div>
+</Preview>
+
+## Left Drawer
+
+```jsx
+<div class="drawer drawer-left">{/* ... */}</div>
+```
+
+<Preview>
+  <label class="btn" for="drawer-3" tabIndex={0}>
+    {"Click"}
+  </label>
+  <input id="drawer-3" hidden type="checkbox" />
+  <div class="drawer drawer-left">
+    <label class="drawer-background" for="drawer-3" tabIndex={0} />
+    <div class="drawer-content">
+      <h2 class="text-2xl font-bold">Modal Title</h2>
+      <p class="my-4">Are you sure?</p>
+    </div>
+  </div>
+</Preview>

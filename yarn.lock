@@ -935,9 +935,9 @@ domutils@^2.8.0:
     domhandler "^4.2.0"
 
 electron-to-chromium@^1.4.284:
-  version "1.4.330"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.330.tgz#4740378db7160d7210afb29800c74048cdf10a99"
-  integrity sha512-PqyefhybrVdjAJ45HaPLtuVaehiSw7C3ya0aad+rvmV53IVyXmYRk3pwIOb2TxTDTnmgQdn46NjMMaysx79/6Q==
+  version "1.4.331"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.331.tgz#c8ea823968563ef2cbb3495233e9e16c48c54a4a"
+  integrity sha512-tdtr9y9oJl8VDiS+HeB6e/JDJqdDGjIk3yRfEMHm5rDnWQ/D5SbafybAayInxolbfbH6pouV5g7ZUAwE/WVtHw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -2868,7 +2868,7 @@ prettier-plugin-tailwindcss@^0.2.4:
   resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.2.4.tgz#ed0ca759bc948eb2bc48b419c6e57eb2adabdb0a"
   integrity sha512-wMyugRI2yD8gqmMpZSS8kTA0gGeKozX/R+w8iWE+yiCZL09zY0SvfiHfHabNhjGhzxlQ2S2VuTxPE3T72vppCQ==
 
-prettier@2.8.4, prettier@^2.8.4:
+prettier@^2.8.4:
   version "2.8.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
   integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
@@ -3062,9 +3062,9 @@ signal-exit@^3.0.2:
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
 simple-icons@^8.6.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-8.6.0.tgz#c88439fdb5fb180677f0a3ba31bd7a462dc80465"
-  integrity sha512-A5rRhFdgsV+1LIdkzIuwa+ilYb1v+svDi1ojOcfnEXaYSsTAlYRpWcH+p0MM1XY7uIkiNJ8i9bkFRoysMbLopw==
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-8.7.0.tgz#3eb584d5f327f3479e2853c5f9d3cb5eac916689"
+  integrity sha512-EpFZ1I7RX8ICh9fRVz1HGU5rguXJ2ZtSbs0Swlc9YdWfrh8o4A2dt3YRPQAAOS30/BdQvMgCmOflWBEdqrTYAg==
 
 slash@^3.0.0:
   version "3.0.0"

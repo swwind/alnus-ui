@@ -15,3 +15,7 @@
 - [Nav](/docs/components/nav)
 - [Progress](/docs/components/progress)
 - [Toggle](/docs/components/toggle)
+- [Tabs](/docs/components/tabs)
+- [Popover](/docs/components/popover)
+- [Modal](/docs/components/modal)
+- [Drawer](/docs/components/drawer)
