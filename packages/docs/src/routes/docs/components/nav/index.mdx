@@ -1,0 +1,66 @@
+---
+title: Nav
+---
+
+import Preview from "~/components/preview/preview";
+import { IoAlarm, IoArchive, IoBalloon } from "@qwikest/icons/ionicons";
+
+# Nav
+
+```jsx
+<nav class="nav">
+  <h2 class="nav-title">Nav Title</h2>
+  <li class="nav-item">Item 1</li>
+  <li class="nav-item active">Item 2 active</li>
+  <li class="nav-item disabled">Item 3 disabled</li>
+  <li class="nav-item">Item 4</li>
+</nav>
+```
+
+<Preview>
+  <nav class="nav w-64">
+    <h2 class="nav-title">Nav Title</h2>
+    <li class="nav-item">Item 1</li>
+    <li class="nav-item active">Item 2 active</li>
+    <li class="nav-item disabled">Item 3 disabled</li>
+    <li class="nav-item active disabled">Item 4 active disabled</li>
+  </nav>
+</Preview>
+
+## Icons
+
+```jsx
+<nav class="nav">
+  <h2 class="nav-title">Nav Icons</h2>
+  <li class="nav-item">
+    <IoAlarm />
+    <span>Item 1</span>
+  </li>
+  <li class="nav-item">
+    <IoArchive />
+    <span>Item 2</span>
+  </li>
+  <li class="nav-item">
+    <IoBalloon />
+    <span>Item 3</span>
+  </li>
+</nav>
+```
+
+<Preview>
+  <nav class="nav w-64">
+    <h2 class="nav-title">Nav Icons</h2>
+    <li class="nav-item">
+      <IoAlarm />
+      <span>Item 1</span>
+    </li>
+    <li class="nav-item">
+      <IoArchive />
+      <span>Item 2</span>
+    </li>
+    <li class="nav-item">
+      <IoBalloon />
+      <span>Item 3</span>
+    </li>
+  </nav>
+</Preview>

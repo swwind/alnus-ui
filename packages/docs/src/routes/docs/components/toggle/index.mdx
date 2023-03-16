@@ -1,0 +1,82 @@
+---
+title: Toggle
+---
+
+import Preview from "~/components/preview/preview";
+import { IoAlarm, IoArchive, IoBalloon } from "@qwikest/icons/ionicons";
+
+# Toggle
+
+```jsx
+<input type="checkbox" hidden id="toggle-1" />
+<label class="toggle" for="toggle-1" tabIndex={0}>
+  <IoAlarm />
+</label>
+```
+
+<Preview>
+  <input type="checkbox" hidden id="toggle-1" />
+  <label class="toggle" for="toggle-1" tabIndex={0}>
+    <IoAlarm />
+  </label>
+</Preview>
+
+**Note**: `.toggle` can be activated by `&.active`, `&.checked` or `:checked + &`.
+
+## Variants
+
+```jsx
+<button class="toggle">
+  <IoAlarm />
+</button>
+<button class="toggle checked">
+  <IoAlarm />
+</button>
+<button class="toggle toggle-outline">
+  <IoAlarm />
+</button>
+<button class="toggle toggle-outline checked">
+  <IoAlarm />
+</button>
+```
+
+<Preview>
+  <button class="toggle">
+    <IoAlarm />
+  </button>
+  <button class="toggle checked">
+    <IoAlarm />
+  </button>
+  <button class="toggle toggle-outline">
+    <IoAlarm />
+  </button>
+  <button class="toggle toggle-outline checked">
+    <IoAlarm />
+  </button>
+</Preview>
+
+## Sizes
+
+```jsx
+<button class="toggle toggle-sm">
+  <IoAlarm />
+</button>
+<button class="toggle">
+  <IoAlarm />
+</button>
+<button class="toggle toggle-lg">
+  <IoAlarm />
+</button>
+```
+
+<Preview>
+  <button class="toggle toggle-sm">
+    <IoAlarm />
+  </button>
+  <button class="toggle">
+    <IoAlarm />
+  </button>
+  <button class="toggle toggle-lg">
+    <IoAlarm />
+  </button>
+</Preview>

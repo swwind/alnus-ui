@@ -12,3 +12,6 @@
 - [Input](/docs/components/input)
 - [Menu](/docs/components/menu)
 - [Switch](/docs/components/switch)
+- [Nav](/docs/components/nav)
+- [Progress](/docs/components/progress)
+- [Toggle](/docs/components/toggle)
