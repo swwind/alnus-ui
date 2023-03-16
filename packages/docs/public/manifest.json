@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "lithe-ui-docs",
+  "short_name": "Lithe UI Docs",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Lithe UI is a tailwindcss component library."
+}

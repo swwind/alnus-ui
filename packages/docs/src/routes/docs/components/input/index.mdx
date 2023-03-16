@@ -1,0 +1,64 @@
+---
+title: Input
+---
+
+import Preview from "~/components/preview/preview";
+
+# Input
+
+```jsx
+<label class="flex flex-col gap-1.5">
+  <span class="text-sm">Email</span>
+  <input type="email" class="input" placeholder="Email" />
+  <span class="text-sm opacity-60">Enter your email address.</span>
+</label>
+```
+
+<Preview>
+  <div class="w-64 space-y-4">
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Email</span>
+      <input type="email" class="input" placeholder="Email" />
+      <span class="text-sm opacity-60">Enter your email address.</span>
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Disabled</span>
+      <input type="email" class="input" placeholder="Email" disabled />
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Color</span>
+      <input type="color" class="input" />
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Datetime Local</span>
+      <input type="datetime-local" class="input" />
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">File</span>
+      <input type="file" class="input" />
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Select</span>
+      <select class="input">
+        <option value="Alice">Alice</option>
+        <option value="Bob">Bob</option>
+        <option value="Cherry">Cherry</option>
+      </select>
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Number</span>
+      <input type="number" class="input" />
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Password</span>
+      <input type="password" class="input" />
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Pattern</span>
+      <input type="text" class="input" pattern="[a-zA-Z]\w+" value="114514" />
+      <span class="text-sm opacity-60">
+        <code>[a-zA-Z]\w+</code>
+      </span>
+    </label>
+  </div>
+</Preview>

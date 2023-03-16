@@ -1,0 +1,88 @@
+---
+title: Menu
+---
+
+import Preview from "~/components/preview/preview";
+import { IoAlarm, IoChevronForward } from "@qwikest/icons/ionicons";
+
+# Menu
+
+```jsx
+<menu class="menu">
+  <h2 class="menu-title">Menu Title</h2>
+  <hr />
+
+  <span class="menu-item">normal</span>
+  <span class="menu-item disabled">disabled</span>
+  <span class="menu-checkbox checked">checkbox</span>
+  <span class="menu-radio checked">radio</span>
+  <hr />
+
+  <span class="menu-item">
+    <IoAlarm class="menu-icon" />
+    custom left icon
+  </span>
+  <span class="menu-item">
+    custom right icon
+    <IoAlarm class="menu-icon-right" />
+  </span>
+  <hr />
+
+  <span class="popover popover-hover menu-item">
+    <span>Sub Menu</span>
+    <div class="popover-content popover-left-top">
+      <menu class="menu">
+        <h3 class="menu-title">Sub Menu</h3>
+        <hr />
+        <span class="menu-item">it's 6pm but</span>
+        <span class="menu-item">i miss u already</span>
+      </menu>
+    </div>
+    <IoChevronForward class="menu-icon-right" />
+  </span>
+</menu>
+```
+
+<Preview>
+  <menu class="menu w-48">
+    <h2 class="menu-title">Menu Title</h2>
+    <hr />
+    <span class="menu-item">it's 6pm but</span>
+    <span class="menu-item">i miss u already</span>
+    <span class="menu-item disabled">7 am wake up</span>
+    <hr />
+    <span class="menu-checkbox checked">checkbox checked</span>
+    <span class="menu-checkbox disabled">checkbox disabled</span>
+    <span class="menu-checkbox">checkbox normal</span>
+    <hr />
+    <span class="menu-radio checked">radio checked</span>
+    <span class="menu-radio disabled">radio disabled</span>
+    <span class="menu-radio">radio normal</span>
+    <hr />
+    <span class="menu-item">
+      <IoAlarm class="menu-icon" />
+      custom left icon
+    </span>
+    <span class="menu-item">
+      custom right icon
+      <IoAlarm class="menu-icon-right" />
+    </span>
+    <hr />
+    <span class="popover popover-hover menu-item">
+      <span>Sub Menu</span>
+      <div class="popover-content popover-left-top">
+        <menu class="menu w-48">
+          <h3 class="menu-title">Sub Menu</h3>
+          <hr />
+          <span class="menu-item">it's 6pm but</span>
+          <span class="menu-item">i miss u already</span>
+        </menu>
+      </div>
+      <IoChevronForward class="menu-icon-right" />
+    </span>
+  </menu>
+</Preview>
+
+**Note**: `.menu-checkbox` and `.menu-radio` can be activated by `&.checked` or `:checked + &`.
+
+**Note**: `.menu-checkbox` and `.menu-radio` can be disabled by `&.disabled` or `:disabled + &`.

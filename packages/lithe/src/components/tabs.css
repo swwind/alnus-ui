@@ -1,0 +1,18 @@
+/* https://bugzilla.mozilla.org/show_bug.cgi?id=418039 */
+.tabs {
+  @apply inline-flex items-center justify-center rounded-md bg-slate-100 p-1 dark:bg-slate-800;
+
+  .tabs-item {
+    @apply inline-flex min-w-[100px] cursor-pointer items-center justify-center rounded-[0.185rem] px-3 py-1.5 text-sm font-medium text-slate-700 transition-all dark:text-slate-200;
+  }
+
+  .tabs-item.disabled,
+  :disabled + .tabs-item {
+    @apply pointer-events-none opacity-50;
+  }
+
+  .tabs-item.active,
+  :checked + .tabs-item {
+    @apply bg-white text-slate-900 shadow-sm dark:bg-slate-900 dark:text-slate-100;
+  }
+}

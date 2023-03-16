@@ -1,0 +1,28 @@
+.modal {
+  @apply fixed top-0 left-0 z-10 flex h-screen w-screen items-center justify-center backdrop-blur;
+
+  /* animations */
+  @apply invisible opacity-0;
+  transition: opacity 300ms ease-in-out, visibility 300ms step-end;
+}
+
+:checked + .modal {
+  @apply visible opacity-100;
+  transition-timing-function: ease-in-out, step-start;
+}
+
+.modal-background {
+  @apply absolute top-0 left-0 h-full w-full bg-[#00000066];
+}
+
+.modal-content {
+  @apply relative w-96 max-w-full scale-50 rounded-md bg-white px-8 py-6 text-slate-900 transition dark:bg-slate-900 dark:text-white;
+}
+
+:checked + .modal > .modal-content {
+  @apply scale-100;
+}
+
+.modal-actions {
+  @apply overflow-visible;
+}

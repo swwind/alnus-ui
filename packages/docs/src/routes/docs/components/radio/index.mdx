@@ -1,0 +1,41 @@
+---
+title: Checkbox
+---
+
+import Preview from "~/components/preview/preview";
+
+# Checkbox
+
+```jsx
+<div class="flex flex-col">
+  <label class="flex items-center gap-4">
+    <input type="radio" class="radio" name="group" />
+    <span>Alice</span>
+  </label>
+  <label class="flex items-center gap-4">
+    <input type="radio" class="radio" name="group" />
+    <span>Bob</span>
+  </label>
+</div>
+```
+
+<Preview>
+  <div class="flex flex-col">
+    <label class="flex items-center gap-4">
+      <input type="radio" class="radio" name="group" />
+      <span>Alice</span>
+    </label>
+    <label class="flex items-center gap-4">
+      <input type="radio" class="radio" name="group" checked />
+      <span>Bob</span>
+    </label>
+    <label class="flex items-center gap-4">
+      <input type="radio" class="radio" disabled />
+      <span>Cherry (disabled)</span>
+    </label>
+    <label class="flex items-center gap-4">
+      <input type="radio" class="radio" disabled checked />
+      <span>David (disabled checked)</span>
+    </label>
+  </div>
+</Preview>
