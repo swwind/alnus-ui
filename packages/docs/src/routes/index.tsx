@@ -11,11 +11,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Lithe UI - Tailwind CSS Components",
+  title: "Alnus UI - Tailwind CSS Components",
   meta: [
     {
       name: "description",
-      content: "Lithe UI is a lightweight tailwindcss component library.",
+      content: "Alnus UI is a lightweight tailwindcss component library.",
     },
   ],
 };

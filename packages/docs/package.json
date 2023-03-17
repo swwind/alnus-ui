@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "litheui-docs",
+  "name": "alnus-ui-docs",
   "version": "0.0.1",
   "description": "App with Routing built-in (recommended)",
   "engines": {
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@qwikest/icons": "^0.0.5",
-    "litheui": "0.0.1",
+    "alnus-ui": "0.0.1",
     "prismjs": "^1.29.0"
   }
 }

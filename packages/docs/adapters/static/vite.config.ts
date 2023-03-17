@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://lithe.pages.dev",
+        origin: "https://alnus.pages.dev",
       }),
     ],
   };

@@ -1,3 +1,3 @@
-# Lithe UI
+# Alnus UI
 
-Lightweight TailwindCSS components library.
+A Lightweight TailwindCSS components library.

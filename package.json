@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "lithe-monorepo",
+  "name": "alnus-monorepo",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "fmt": "pretty-quick",
     "fmt.staged": "pretty-quick --staged",
-    "build": "yarn workspace litheui run build && yarn workspace litheui-docs run build",
+    "build": "yarn workspaces run build",
     "postinstall": "husky install"
   },
   "devDependencies": {

@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "lithe-ui-docs",
-  "short_name": "Lithe UI Docs",
+  "name": "alnus-ui-docs",
+  "short_name": "Alnus UI Docs",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Lithe UI is a tailwindcss component library."
+  "description": "Alnus UI is a tailwindcss component library."
 }
