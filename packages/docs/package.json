@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@qwikest/icons": "^0.0.5",
-    "alnus-ui": "0.0.1",
+    "alnus-ui": "0.0.2",
     "prismjs": "^1.29.0"
   }
 }
