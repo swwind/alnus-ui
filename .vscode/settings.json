@@ -1,4 +1,8 @@
 {
   "css.lint.unknownAtRules": "ignore",
-  "less.lint.unknownAtRules": "ignore"
+  "less.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.configFile": {
+    "packages/alnus/tailwind.config.js": "packages/alnus/**",
+    "packages/docs/tailwind.config.js": "packages/docs/**"
+  }
 }
