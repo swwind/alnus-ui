@@ -11,7 +11,7 @@ export const Header = () => {
         </form>
       </div>
       <div class="inline-flex gap-2">
-        <Link href="/docs" class="btn btn-ghost gap-2">
+        <Link href="/docs" class="btn btn-ghost">
           <IoApps class="h-4 w-4" />
           Components
         </Link>

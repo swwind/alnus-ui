@@ -1,0 +1,53 @@
+---
+title: Tooltip
+---
+
+import Preview from "~/components/preview/preview";
+
+# Tooltip
+
+```jsx
+<div class="tooltip" data-tip="hello world">
+  <button class="btn">Button</button>
+</div>
+```
+
+<Preview>
+  <div class="tooltip" data-tip="hello world">
+    <button class="btn">Button</button>
+  </div>
+</Preview>
+
+**Note**: `.tooltip` can be activated by `&:hover` or `&.active`.
+
+## Directions
+
+```jsx
+<div class="tooltip" data-tip="hello world">
+  <button class="btn">(default)</button>
+</div>
+<div class="tooltip tooltip-bottom" data-tip="hello world">
+  <button class="btn">tooltip-bottom</button>
+</div>
+<div class="tooltip tooltip-left" data-tip="hello world">
+  <button class="btn">tooltip-left</button>
+</div>
+<div class="tooltip tooltip-right" data-tip="hello world">
+  <button class="btn">tooltip-right</button>
+</div>
+```
+
+<Preview>
+  <div class="tooltip" data-tip="hello world">
+    <button class="btn">(default)</button>
+  </div>
+  <div class="tooltip tooltip-bottom" data-tip="hello world">
+    <button class="btn">tooltip-bottom</button>
+  </div>
+  <div class="tooltip tooltip-left" data-tip="hello world">
+    <button class="btn">tooltip-left</button>
+  </div>
+  <div class="tooltip tooltip-right" data-tip="hello world">
+    <button class="btn">tooltip-right</button>
+  </div>
+</Preview>

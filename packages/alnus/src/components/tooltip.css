@@ -1,0 +1,57 @@
+.tooltip {
+  @apply relative;
+
+  @apply after:pointer-events-none after:absolute after:z-50 after:whitespace-nowrap after:rounded-md after:border after:border-slate-200 after:bg-white after:px-3 after:py-1.5 after:text-sm after:text-slate-700 after:shadow-md after:content-[attr(data-tip)] after:dark:border-slate-800 after:dark:bg-slate-800 after:dark:text-slate-400;
+
+  @apply after:invisible after:opacity-0 after:[transition:_opacity_150ms_ease-in,_visibility_150ms_step-end,_transform_150ms_ease-in];
+
+  /* .tooltip-top */
+  &:not(.tooltip-bottom):not(.tooltip-left):not(.tooltip-right) {
+    @apply after:bottom-full;
+  }
+
+  &.tooltip-bottom {
+    @apply after:top-full;
+  }
+
+  &.tooltip-left {
+    @apply after:right-full;
+  }
+
+  &.tooltip-right {
+    @apply after:left-full;
+  }
+
+  /* .tooltip-top or .tooltip-bottom */
+  &:not(.tooltip-left):not(.tooltip-right) {
+    @apply after:left-1/2 after:-translate-x-1/2;
+  }
+
+  &.tooltip-left,
+  &.tooltip-right {
+    @apply after:top-1/2 after:-translate-y-1/2;
+  }
+
+  &.active,
+  &:hover {
+    @apply after:visible after:opacity-100;
+    @apply after:[transition-timing-function:_ease-out,_step-start,_ease-out];
+
+    /* .tooltip-top */
+    &:not(.tooltip-bottom):not(.tooltip-left):not(.tooltip-right) {
+      @apply after:-translate-y-1;
+    }
+
+    &.tooltip-bottom {
+      @apply after:translate-y-1;
+    }
+
+    &.tooltip-left {
+      @apply after:-translate-x-1;
+    }
+
+    &.tooltip-right {
+      @apply after:translate-x-1;
+    }
+  }
+}

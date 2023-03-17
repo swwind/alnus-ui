@@ -1,4 +1,5 @@
 import { component$, Slot } from "@builder.io/qwik";
+import { Footer } from "~/components/footer/footer";
 import { Header } from "~/components/header/header";
 
 import { Menu } from "~/components/menu/menu";
@@ -12,11 +13,12 @@ export default component$(() => {
         </div>
         <Menu />
       </div>
-      <div class="min-w-0 flex-1">
+      <div class="flex min-h-full min-w-0 flex-1 flex-col">
         <Header />
-        <article class="prose max-w-4xl p-8">
+        <article class="prose max-w-4xl flex-1 p-8">
           <Slot />
         </article>
+        <Footer />
       </div>
     </div>
   );

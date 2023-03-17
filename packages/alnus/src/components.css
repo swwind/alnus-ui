@@ -11,5 +11,6 @@
 @import "./components/toggle.css";
 @import "./components/menu.css";
 @import "./components/nav.css";
+@import "./components/tooltip.css";
 
 @import "./components/typography.css";

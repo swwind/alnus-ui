@@ -8,7 +8,7 @@ const MENU = [
     items: [
       {
         text: "Installation",
-        icon: <IoDownload />,
+        icon: <IoDownload class="h-4 w-4" />,
         href: "/docs/instruction/install",
       },
     ],
@@ -80,6 +80,11 @@ const MENU = [
         text: "Drawer",
         icon: <IoCodeSlash />,
         href: "/docs/components/drawer",
+      },
+      {
+        text: "Tooltip",
+        icon: <IoCodeSlash />,
+        href: "/docs/components/tooltip",
       },
     ],
   },

@@ -18,12 +18,12 @@ export default component$(() => {
           Instant Development
         </h1>
         <p class="my-8 space-x-4">
-          <Link class="btn gap-2" href="/docs">
+          <Link class="btn" href="/docs">
             <IoDocument class="h-4 w-4" />
             Documents
           </Link>
           <Link
-            class="btn btn-subtle gap-2"
+            class="btn btn-subtle"
             href="https://github.com/swwind/alnus-ui"
             target="_blank"
           >
