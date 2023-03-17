@@ -3,6 +3,7 @@ title: Progress
 ---
 
 import Preview from "~/components/preview/preview";
+import Progress from "~/components/preview/progress";
 
 # Progress
 
@@ -24,4 +25,38 @@ import Preview from "~/components/preview/preview";
   </div>
 </Preview>
 
-**Note**: `progress.progress:not([value])` does not have animation due to a Chrome feature.
+**Note**: Using `progress` element is deprecated due to shadow DOM's poor standardization.
+
+For example
+
+- `::-webkit-progress-bar` does not have animation due to a Chrome feature.
+- `::-moz-progress-bar` does not have transition animation due to a Firefox feature.
+
+Therefore, we suggest using custom elements for `.progress`.
+
+## With custom elements
+
+```jsx
+<div class="progress" style="--value:20" />
+<div class="progress" style="--value:40" />
+<div class="progress" style="--value:80" />
+<div class="progress" />
+```
+
+<Preview>
+  <div class="flex w-64 flex-col gap-4">
+    <div class="progress" style="--value:20" />
+    <div class="progress" style="--value:40" />
+    <div class="progress" style="--value:80" />
+    <div class="progress" />
+  </div>
+</Preview>
+
+## Transitions
+
+<Preview>
+  <div class="flex w-64 flex-col gap-4">
+    <Progress />
+    <p>Click the progress bar</p>
+  </div>
+</Preview>

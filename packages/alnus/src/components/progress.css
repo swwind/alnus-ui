@@ -1,21 +1,22 @@
-.progress[value] {
-  @apply h-4 appearance-none overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800;
+progress.progress[value] {
+  @apply h-4 w-full appearance-none overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800;
 
   &::-webkit-progress-bar {
     @apply bg-slate-200 dark:bg-slate-800;
   }
 
   &::-webkit-progress-value {
-    @apply bg-slate-900 dark:bg-slate-400;
+    @apply bg-slate-900 transition-all dark:bg-slate-400;
   }
 
+  /* FIXME: Transition does not work in Firefox */
   &::-moz-progress-bar {
-    @apply bg-slate-900 dark:bg-slate-400;
+    @apply bg-slate-900 transition-all dark:bg-slate-400;
   }
 }
 
-.progress:not([value]) {
-  @apply h-4 appearance-none overflow-hidden rounded-full;
+progress.progress:not([value]) {
+  @apply h-4 w-full appearance-none overflow-hidden rounded-full;
 
   &::-webkit-progress-bar {
     background-repeat: repeat;
@@ -72,5 +73,38 @@
 @keyframes progress-anime {
   to {
     background-position: 32px 0;
+  }
+}
+
+.progress:not(progress) {
+  @apply relative h-4 appearance-none overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800;
+
+  @apply after:absolute after:top-0 after:left-0 after:h-full after:w-[calc(var(--value)*1%)] after:bg-slate-900 after:transition-all after:dark:bg-slate-400;
+
+  @apply before:absolute before:left-0 before:top-[calc(var(--value)*1%)] before:h-full before:w-full before:translate-y-full;
+
+  &::before {
+    background-repeat: repeat;
+    background-size: 32px 16px;
+    background-image: linear-gradient(
+      -45deg,
+      theme("colors.slate.200") 0,
+      theme("colors.slate.200") 33%,
+      theme("colors.slate.900") 33%,
+      theme("colors.slate.900") 66%,
+      theme("colors.slate.200") 66%
+    );
+    animation: progress-anime 0.5s linear infinite;
+
+    @media (prefers-color-scheme: dark) {
+      background-image: linear-gradient(
+        -45deg,
+        theme("colors.slate.800") 0,
+        theme("colors.slate.800") 33%,
+        theme("colors.slate.400") 33%,
+        theme("colors.slate.400") 66%,
+        theme("colors.slate.800") 66%
+      );
+    }
   }
 }

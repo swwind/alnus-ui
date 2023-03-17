@@ -1,3 +1,9 @@
+:root {
+  --value: -100;
+
+  @apply dark:[color-scheme:_dark];
+}
+
 body {
   @apply bg-white text-slate-900 dark:bg-slate-900 dark:text-white;
 }
