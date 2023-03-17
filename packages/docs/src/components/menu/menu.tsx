@@ -96,7 +96,10 @@ export const Menu = component$(() => {
           {menu.items.map((item, index) => (
             <div class="space-y-1">
               <Link
-                class={["nav-item", { active: loc.url.pathname === item.href }]}
+                class={[
+                  "nav-item",
+                  { active: loc.url.pathname.startsWith(item.href) },
+                ]}
                 href={item.href}
                 key={index}
               >
