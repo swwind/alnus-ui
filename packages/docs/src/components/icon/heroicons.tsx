@@ -1,4 +1,4 @@
-import { QwikIntrinsicElements } from "@builder.io/qwik";
+import type { QwikIntrinsicElements } from "@builder.io/qwik";
 
 export const Bracket = (props: QwikIntrinsicElements["svg"]) => (
   <svg

@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "lint": "yarn workspaces run lint",
     "fmt": "pretty-quick",
     "fmt.staged": "pretty-quick --staged",
     "build": "yarn workspaces run build",

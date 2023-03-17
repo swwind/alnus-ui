@@ -1,5 +1,5 @@
 import { Link } from "@builder.io/qwik-city";
-import { IoApps, IoMenu } from "@qwikest/icons/ionicons";
+import { IoApps } from "@qwikest/icons/ionicons";
 import { LogoGithub } from "../icon/ionicons";
 
 export const Header = () => {

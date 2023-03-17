@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/swwind/alnus-ui",
   "scripts": {
+    "lint": "exit 0",
     "build": "yarn build.postcss && yarn build.prejss",
     "build.postcss": "postcss src/*.css --dir dist",
     "build.prejss": "node build.js"

@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Link, useLocation } from "@builder.io/qwik-city";
-import { IoCode, IoCodeSlash, IoDownload } from "@qwikest/icons/ionicons";
+import { IoCodeSlash, IoDownload } from "@qwikest/icons/ionicons";
 
 const MENU = [
   {
