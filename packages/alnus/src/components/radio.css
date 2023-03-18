@@ -5,8 +5,23 @@
 .radio:checked {
   background-size: 14px 14px;
   background-image: url("./icons/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: radiomark 0.3s ease-in-out;
 
   @media (prefers-color-scheme: dark) {
     background-image: url("./icons/circle.dark.svg");
+  }
+}
+
+@keyframes radiomark {
+  0% {
+    background-size: 0 0;
+  }
+  50% {
+    background-size: 16px 16px;
+  }
+  to {
+    background-size: 14px 14px;
   }
 }
