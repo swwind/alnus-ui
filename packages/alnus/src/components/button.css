@@ -4,22 +4,22 @@
   /* variants */
 
   /* default variant */
-  @apply bg-slate-900 text-white hover:bg-slate-700 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-100;
+  @apply bg-slate-900 text-white hover:bg-slate-700 active:bg-slate-900 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-100 dark:active:bg-slate-900;
 
   &.btn-danger {
-    @apply bg-red-500 text-white hover:bg-red-600 dark:hover:bg-red-600;
+    @apply bg-red-500 text-white hover:bg-red-600 active:bg-red-500 dark:hover:bg-red-600 dark:active:bg-red-500;
   }
 
   &.btn-outline {
-    @apply border border-slate-200 bg-transparent text-slate-900 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800;
+    @apply border border-slate-200 bg-transparent text-slate-900 hover:bg-slate-100 active:bg-transparent dark:border-slate-700 dark:text-slate-100 dark:hover:bg-slate-800 dark:active:bg-transparent;
   }
 
   &.btn-subtle {
-    @apply bg-slate-100 text-slate-900 hover:bg-slate-200 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-800;
+    @apply bg-slate-100 text-slate-900 hover:bg-slate-200 active:bg-slate-100 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-800 dark:active:bg-slate-700;
   }
 
   &.btn-ghost {
-    @apply bg-transparent text-slate-900 hover:bg-slate-100 dark:text-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-100;
+    @apply bg-transparent text-slate-900 hover:bg-slate-100 active:bg-transparent dark:text-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-100 dark:active:bg-transparent;
   }
 
   &.btn-link {
