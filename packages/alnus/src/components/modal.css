@@ -6,7 +6,7 @@
   transition: opacity 300ms ease-in-out, visibility 300ms step-end;
 
   .modal-background {
-    @apply absolute top-0 left-0 h-full w-full bg-[#00000066];
+    @apply absolute top-0 left-0 h-full w-full bg-black/50;
   }
 
   .modal-content {

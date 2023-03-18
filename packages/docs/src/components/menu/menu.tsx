@@ -98,8 +98,8 @@ export const Menu = component$(() => {
       {MENU.map((menu, index) => (
         <div class="nav" key={index}>
           <h3 class="nav-title">{menu.text}</h3>
-          {menu.items.map((item, index) => (
-            <div class="space-y-1">
+          <div class="space-y-1">
+            {menu.items.map((item, index) => (
               <Link
                 class={[
                   "nav-item",
@@ -111,8 +111,8 @@ export const Menu = component$(() => {
                 {item.icon}
                 {item.text}
               </Link>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       ))}
     </div>
