@@ -46,6 +46,23 @@ import Preview from "~/components/preview/preview";
       </select>
     </label>
     <label class="flex w-full flex-col gap-1.5">
+      <span class="text-sm">Multiple Select</span>
+      <select multiple size="8" class="input">
+        <optgroup label="4-legged pets">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster" disabled>
+            Hamster
+          </option>
+        </optgroup>
+        <optgroup label="Flying pets">
+          <option value="parrot">Parrot</option>
+          <option value="macaw">Macaw</option>
+          <option value="albatross">Albatross</option>
+        </optgroup>
+      </select>
+    </label>
+    <label class="flex w-full flex-col gap-1.5">
       <span class="text-sm">Number</span>
       <input type="number" class="input" />
     </label>
