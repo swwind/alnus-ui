@@ -9,7 +9,7 @@
     }
   }
 
-  &:not(select[multiple]) {
+  &:not(select[multiple]):not(textarea) {
     @apply h-10;
   }
 
